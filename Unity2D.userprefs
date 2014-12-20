@@ -1,0 +1,24 @@
+﻿<Properties GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BombScript.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PressurePlate.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BombScript.cs" Line="17" Column="58" />
+      <File FileName="Assets\Scripts\GameControllerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DoorScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SnailScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GoalBarrierScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MonsterScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DeathBarrierScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpringScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HeavyScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LiftScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ButtonScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

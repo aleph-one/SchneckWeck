@@ -33,21 +33,21 @@ using System.Collections;
 			} else if (moveX < 0 && !facingLeft) {
 				flip ();
 			}
-			if (rigidbody2D.velocity.x < 0.10 && rigidbody2D.velocity.x > -0.10) {
+			if (GetComponent<Rigidbody2D>().velocity.x < 0.10 && GetComponent<Rigidbody2D>().velocity.x > -0.10) {
 				moveX=moveX * 10;
 			}
-			rigidbody2D.AddForce (new Vector2 (moveX, 0) * speed);
+			GetComponent<Rigidbody2D>().AddForce (new Vector2 (moveX, 0) * speed);
 			float dir = 1;
 			if (facingLeft)	dir = -1;
 
 			bool jump = Input.GetButton("Jump-" + gameObject.name);
 			if (jump) {
-				rigidbody2D.AddForce(new Vector2(10 * dir, 30) * speed);
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(10 * dir, 30) * speed);
 			}
 		}
 	}
 	private void flip() {
 		facingLeft = ! facingLeft;
-		rigidbody2D.transform.Rotate (new Vector3(0, 180, 0));
+		GetComponent<Rigidbody2D>().transform.Rotate (new Vector3(0, 180, 0));
 	}
 }

@@ -13,10 +13,10 @@ public class DoorScript : MonoBehaviour {
 	void Start () {
 		if (transform.rotation.z == 0) {
 			slide = new Vector3 (1, 0, 0);
-			slide *= ((BoxCollider2D)collider2D).bounds.size.x;
+			slide *= ((BoxCollider2D)GetComponent<Collider2D>()).bounds.size.x;
 		} else {//if (transform.rotation.z == 90) {
 			slide = new Vector3 (0, 1, 0);
-			slide *= ((BoxCollider2D)collider2D).bounds.size.y;
+			slide *= ((BoxCollider2D)GetComponent<Collider2D>()).bounds.size.y;
 //		} else {
 //			print ("Unknown rotation: " + transform.rotation.z);
 		}

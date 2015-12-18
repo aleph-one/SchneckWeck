@@ -40,7 +40,7 @@ public class GameControllerScript : MonoBehaviour {
 	}
 	public void NextLevel() {
 		if (! isGameOver) {
-			audio.PlayOneShot (gameWonAudio);
+			GetComponent<AudioSource>().PlayOneShot (gameWonAudio);
 			gameWon.SetActive (true);
 			isGameOver = true;
 			level++;
@@ -50,7 +50,7 @@ public class GameControllerScript : MonoBehaviour {
 
 	public void RestartLevel() {
 		if (! isGameOver) {
-			audio.PlayOneShot (gameOverAudio);
+			GetComponent<AudioSource>().PlayOneShot (gameOverAudio);
 			gameOver.SetActive (true);
 			isGameOver = true;
 			pressRandomKey ();

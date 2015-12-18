@@ -21,7 +21,7 @@ public class SnailScript : MonoBehaviour {
 		if (!facingLeft) {
 			dir = -1;
 		}
-		rigidbody2D.AddForce (new Vector2(15 * dir, 0));
+		GetComponent<Rigidbody2D>().AddForce (new Vector2(15 * dir, 0));
 	}
 
 	void OnCollisionEnter2D (Collision2D other) {

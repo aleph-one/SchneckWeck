@@ -27,7 +27,7 @@ public class DeathBarrierScript : MonoBehaviour {
 			GameControllerScript.singleton.RestartLevel();
 			StartCoroutine("Mampf");
 			if (audioClip != null)
-				audio.PlayOneShot(audioClip);
+				GetComponent<AudioSource>().PlayOneShot(audioClip);
 		}
 	}
 	void OnTriggerEnter2D(Collider2D other) {

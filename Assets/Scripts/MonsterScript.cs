@@ -12,7 +12,7 @@ public class MonsterScript : MonoBehaviour {
 			if (!facingLeft) {
 					dir = -1;
 			}
-			rigidbody2D.AddForce (new Vector2 (14 * dir, 0));
+			GetComponent<Rigidbody2D>().AddForce (new Vector2 (14 * dir, 0));
 		}
 	}
 
@@ -32,14 +32,14 @@ public class MonsterScript : MonoBehaviour {
 			yield return new WaitForSeconds(.02f);
 		}
 		for (float f = 0f; f <= 40; f += 1) {
-			rigidbody2D.AddForce (new Vector2(40, 0));
+			GetComponent<Rigidbody2D>().AddForce (new Vector2(40, 0));
 			yield return new WaitForSeconds(.01f);
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
 		if (other.gameObject.tag == "Bomb") {
-			audio.Play();
+			GetComponent<AudioSource>().Play();
 			StartCoroutine("Squash");
 			//StartCoroutine("RunAway");
 		}

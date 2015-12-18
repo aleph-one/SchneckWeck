@@ -19,7 +19,7 @@ public class HeavyScript : MonoBehaviour {
 			yield return new WaitForSeconds(.02f);
 		}
 		for (float f = 0f; f <= 40; f += 1) {
-			rigidbody2D.AddForce (new Vector2(40, 0));
+			GetComponent<Rigidbody2D>().AddForce (new Vector2(40, 0));
 		}
 	}
 	
